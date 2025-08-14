@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Google Clone</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .bg {
+            background-image: url(googlebg.png);
+            background-size: cover;
+            width: 100dvw;
+            height: 100dvh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .midbox {
+            /* background-color: rgb(241, 206, 34); */
+            width: 70%;
+            /* height: 400px; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .midbox h1 {
+            font-size: 100px;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: white;
+            width: 70%;
+            padding: 12px;
+            border-radius: 25px;
+
+
+        }
+
+        .search {
+            /* background-color: blanchedalmond; */
+            width: 86%;
+            padding: 0px 5px;
+        }
+
+        .search input {
+            width: 100%;
+            border: none;
+            outline: none;
+            font-size: 20px;
+        }
+
+        .lbox {
+            /* background-color: rgb(106, 228, 65); */
+            width: 120px;
+            height: 120px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: 0.4s all ease;
+            border-radius: 10px;
+            
+        }
+
+        .lbox:hover {
+            background-color: rgba(255, 255, 255, 0.552);
+
+            .menu {
+                color: white;
+            }
+        }
+
+        .circle {
+            background-color: black;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+
+        }
+
+        .menu {
+            width: 100%;
+            text-align: end;
+            color: rgba(255, 255, 255, 0);
+        }
+
+        .groupbox {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .lbox p{
+            color: white;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="midbox">
+            <h1>Google</h1>
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <form action="https://google.com/search" class="search">
+                    <input placeholder="Search Google or type a URL" type="text" name="q" id="">
+                </form>
+                <i class="fa-solid fa-microphone"></i>
+                <i class="fa-solid fa-camera"></i>
+            </div>
+
+            <div class="groupbox">
+                <div class="lbox">
+                    <div class="menu">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class="circle">
+                        <img src="insta.png" width="100%" alt="insta" class="circle">
+                    </div>
+                    <p>Instagram</p>
+                </div>
+
+                <div class="lbox">
+                    <div class="menu">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class="circle">
+                        <img src="whatsapp.png" width="100%" alt="insta" class="circle">
+                    </div>
+                    <p>Whatsapp</p>
+                </div>
+
+                <div class="lbox">
+                    <div class="menu">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class="circle">
+                        <img src="fb.png" width="100%" alt="insta" class="circle">
+                    </div>
+                    <p>Facebook</p>
+                </div>
+
+                <div class="lbox">
+                    <div class="menu">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class="circle">
+                        <img src="youtube.png" width="100%" alt="insta" class="circle">
+                    </div>
+                    <p>YouTube</p>
+                </div>
+                <div class="lbox">
+                    <div class="menu">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class="circle">
+                        <img src="linkedin.png" width="100%" alt="insta" class="circle">
+                    </div>
+                    <p>Linkedin</p>
+                </div>
+                <div class="lbox">
+                    <div class="menu">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class="circle">
+                        <img src="snapchat.png" width="100%" alt="insta" class="circle">
+                    </div>
+                    <p>Snapchat</p>
+                </div>
+                <div class="lbox">
+                    <div class="menu">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class="circle">
+                        <img src="mail.png" width="100%" alt="insta" class="circle">
+                    </div>
+                    <p>G-mail</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
